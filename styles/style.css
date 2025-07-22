@@ -7,3 +7,96 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* Shared styles */
+.display-flex{
+  display: flex;
+}
+
+.dark01
+{
+   color: #131313;
+}
+
+.dark02
+{
+   color: #424242;
+}
+
+.bg-color
+{
+   background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary
+{
+   padding: 20px 25px 20px 25px;
+   background-color: #FF900E;
+   border-radius: 0.5rem;
+   border: none;
+   font-size: 1.25rem;
+   color: #FFFFFF;
+   font-weight: 600;
+}
+/* Navbar releted styles */
+
+.navbar
+{
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-items
+{
+    list-style: none;
+    margin-right: 40px;
+    
+    
+}
+
+.nav-link
+{
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 500;
+   color: #424242;  /*Dark02*/
+}
+
+.brand-name
+{
+   font-size: 2.5rem;
+   font-weight: bold;
+   color: #131313; /*Dark01*/
+}
+
+.navbar, .banner
+{
+   max-width: 1440px ;
+   margin: 0 auto;
+}
+
+.banner-content
+{
+   max-width: 868px;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 3.2rem;
+}
+
+.banner-tittle
+{
+   font-size: 4rem;
+   font-weight: bold;
+}
+
+.banner-description
+{
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.6rem;
+}
+
+.banner > img
+{
+   margin-bottom: 2rem;
+}
