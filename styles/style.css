@@ -23,6 +23,15 @@
    color: #424242;
 }
 
+.dark03
+{
+  color: #727272;
+}
+
+.ornge-light
+{
+  color: #FF900E;
+}
 .bg-color
 {
    background-color: rgba(255, 144, 14, 0.1);
@@ -37,6 +46,12 @@
    font-size: 1.25rem;
    color: #FFFFFF;
    font-weight: 600;
+}
+
+main
+{
+   max-width: 1440px;
+   margin: 0 auto;
 }
 /* Navbar releted styles */
 
@@ -96,7 +111,113 @@
    line-height: 1.6rem;
 }
 
-.banner > img
+.banner-img
 {
+   width: 100%;
    margin-bottom: 2rem;
+}
+
+
+
+/* Brand featurs */
+.feature-content
+{
+   width: 537px;
+   margin-top: 285px;
+   margin-left: 75px;
+
+}
+.features-images
+{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 1.5rem;
+   margin-top: 85px;
+}
+
+
+.feature-tittle
+{
+   font-size: 2.8rem;
+   font-weight: 700;
+}
+
+.feature-description
+{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+
+
+/* Responsive for mobile or small device */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links
+    {
+        flex-direction: column;
+    }
+    
+    .nav-links
+    {
+        gap: 0.5rem;
+    }
+
+    .banner-img
+    {
+       width: 100%;
+    }
+
+    .brand-feature
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-content, .image-items
+    {
+       width: 90%;
+    }
+    
+    .feature-content
+    {
+       margin-top: 20px;
+    }
+
+    .features-images
+    {
+       grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* Responsive for tablat or medium device */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .banner-img
+    {
+       width: 100%;
+    }
+
+    .brand-feature
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-items
+    {
+       width: 90%;
+    }
+
+    .features-images
+    {
+       grid-template-columns: repeat(2,1fr);
+    }
+
+    .feature-content
+    {
+       margin-top: 20px;
+       width: 85%;
+    }
 }
