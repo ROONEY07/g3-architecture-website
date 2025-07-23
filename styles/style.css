@@ -245,8 +245,25 @@ main
 }
 
 
+/* Footer section*/
+.footer-section
+{
+   max-width: 1440px;
+   height: auto;
+   background-color: #FFF4E7;
+   margin: 130px auto;
+   border-radius: 0.5rem;
+   margin-bottom: 216px;
+}
 
-
+.footer-content
+{
+  
+   font-size: 20px;
+   font-weight: 400;
+   text-align: center;
+   padding: 38px;
+}
 
 /* Responsive for mobile or small device */
 @media screen and (max-width: 576px) {
@@ -305,6 +322,10 @@ main
        padding-left: 1rem;
     }
     
+    .footer-content
+    {
+      line-height: 30px;
+    }
 }
 
 /* Responsive for tablat or medium device */
