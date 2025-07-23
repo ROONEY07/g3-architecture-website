@@ -50,7 +50,7 @@
 
 main
 {
-   max-width: 1440px;
+   max-width: 1340px;
    margin: 0 auto;
 }
 
@@ -65,6 +65,7 @@ main
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.7rem;
+  color: #727272;
 }
 
 /* Navbar releted styles */
@@ -206,11 +207,7 @@ main
 .fact-des
 {
    max-width: 540px;
-   line-height: 1.5rem;
    margin-bottom: 5.6rem;
-   font-size: 1rem;
-   font-weight: 600;
-   color: #727272;
    margin-top: 10px;
 }
 
@@ -265,11 +262,65 @@ main
    padding: 38px;
 }
 
+/* More features section */
+
+
+#feature-section-tittle
+{
+   border-left: 5px solid #FF900E;
+   padding-left: 21px;
+}
+
+.feacture-card .feature-tittle
+{
+   font-weight: 600;
+   font-size: 1.25rem;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+.feacture-card
+{
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+   margin-bottom: 20px;
+}
+
+.feature
+{
+   gap: 140px;
+   margin-top: 130px;
+   margin-bottom: 100px;
+}
+
+#experience-badge
+{
+   padding: 46px 42px;
+   margin-top: -80px;
+   margin-left: -100px;
+}
+
+#experience-year
+{
+   font-size: 4rem;
+}
+
+
+
+
+
+
+
+
+
 /* Responsive for mobile or small device */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links
+    .navbar, .nav-links,.feature,.brand-feature
     {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .nav-links
@@ -282,12 +333,12 @@ main
        width: 100%;
     }
 
-    .brand-feature
+    /* .brand-feature
     {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     .feature-content, .image-items
     {
@@ -326,16 +377,26 @@ main
     {
       line-height: 30px;
     }
+
+    .img-container img
+    {
+      width: 100%;
+    }
+
+    #experience-badge
+    {
+       margin: auto;
+    }
 }
 
 /* Responsive for tablat or medium device */
 @media screen and (min-width: 576px) and (max-width: 992px){
-    .banner-img
+    .banner-img, .img-container img
     {
        width: 100%;
     }
 
-    .brand-feature
+    .brand-feature,.feature
     {
         flex-direction: column;
         justify-content: center;
@@ -378,5 +439,11 @@ main
        grid-template-columns: repeat(3,1fr);
        justify-items: center;
        gap: 24px;
+    }
+
+    #experience-badge
+    {
+       margin-top: 20px;
+       margin-left: 20px;
     }
 }
